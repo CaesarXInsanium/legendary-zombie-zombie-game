@@ -8,7 +8,8 @@ project_dependecies = [
 # compile_commands.json should be placed in directory named build
 project_sources = [
   'src/main.c',
-  'src/test.c'
+  'src/draw.c',
+  'src/game.c',
   ]
 
 build_args = [

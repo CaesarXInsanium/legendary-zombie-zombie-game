@@ -1,38 +1,39 @@
 """
 This file will be used in order to define the architecture of the game
 """
-def define(*args):
+def define_var(*args):
     for item in args:
         print(f"Defined: %", item)
 # Here we define some important definitions
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-
-class game_h:
-    """
-    game.h
-    """
+class PlayerPosition:
+    x = 0
+    y = 0
+class draw_h:
     @staticmethod
     def draw_frame():
-        """
-        for now this function will take no arguments and will simply draw the circle
-        """
+        # draws circle for now
+        print("Drawing Frame")
+        pass
+class game_h:
+    @staticmethod
+    def run_frame():
+        print('Running Game Frame')
         pass
 class entity_h:
-    """
-    entity.h
-    """
-    define(
+    define_var(
         
     )
 
 class player_h:
-    """
-    player.h
-    """
-
+    pass
 
 def main():
+    is_game_end = False
+    while not is_game_end:
+        game_h.run_frame()
+        draw_h.draw_frame()
     pass
 
 main()

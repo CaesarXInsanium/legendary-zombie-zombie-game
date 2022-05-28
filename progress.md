@@ -8,16 +8,25 @@ Ordering of list denotes importance and completion order.
 - raylib installation
 - basic meson build system
 - basic white window build
+- moving circle
 
 ## In Progress
 
-- moving circle
+List order denotes importance
 
 ## Planned
 
-- zombies and obstacles
-- player health
+- create header for most important values and definitions
+  - speed
+  - health
+  - 
+- zombies/entities
+- obstacles/hitboxes
+- zombie damaging when they get too close
+- healthbar
 - camera movement
-- basic map
+- basic map/background
+- guns
+- sound
 
 ## Wishlist

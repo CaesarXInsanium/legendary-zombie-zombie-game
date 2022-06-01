@@ -9,22 +9,32 @@ Ordering of list denotes importance and completion order.
 - basic meson build system
 - basic white window build
 - moving circle
+- create header for most important values and definitions
+  - speed
+  - health
+  - fps target
+  - screen dimensions
+- background image
+- limit to number of zombies
+- functions that do one thing only, edit one piece of data
 
 ## In Progress
 
 List order denotes importance
 
+- camera fixation
+  - camera movement
+- ZombieData
+- PlayerData
+- limit to camera movement, max amount of area to move around in
+- map interaction/walls
+
 ## Planned
 
-- create header for most important values and definitions
-  - speed
-  - health
-  - 
-- zombies/entities
-- obstacles/hitboxes
 - zombie damaging when they get too close
+- obstacles/hitboxes
+- zombies/entities
 - healthbar
-- camera movement
 - basic map/background
 - guns
 - sound

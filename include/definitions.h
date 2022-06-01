@@ -1,0 +1,13 @@
+#ifndef DEFINITIONS_H
+#define DEFINITIONS_H
+
+#define GAMENAME "SAS 5"
+
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+#define TARGETFPS 32
+
+#define PLAYER_SPEED 8.0
+
+#define MAX_ZOMBIES
+#endif

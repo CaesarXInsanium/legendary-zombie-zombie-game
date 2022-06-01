@@ -14,9 +14,8 @@ These things
 
 Concepts relating to the way the player sees the action.
 
-- camera is centered on player
-- camera location
-- camera moves with the player
+- camera does not move
+- player does not move beyond a certain point
 - for the moment only implement small limited world
 
 ## World

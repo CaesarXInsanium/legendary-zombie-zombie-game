@@ -1,22 +1,24 @@
 #include <raylib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-#include "game.h"
+#include "definitions.h"
 #include "draw.h"
-
-#define GAMENAME "SAS 5"
-#define WIDTH 800
-#define HEIGHT 600
-#define TARGETFPS 165
+#include "game.h"
+#include "map.h"
 
 int main(void) {
-  InitWindow(WIDTH, HEIGHT, GAMENAME);
+  InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, GAMENAME);
   SetTargetFPS(TARGETFPS);
-  Vector2 player_position = {(float)WIDTH/2, (float)HEIGHT/2};
+  Texture2D maze = load_image_texture("share/simple_maze.png");
+
+  PlayerData *playerdata = (PlayerData *)malloc(sizeof(PlayerData));
+  PlayerData_init(playerdata, Vector2_new(0.0, 0.0));
 
   while (!WindowShouldClose()) {
-    run_frame(&player_position);
-    draw_frame(player_position);
+    run_frame(NULL, 0, playerdata);
+    draw_frame(NULL, 0, playerdata, maze);
   }
+  PlayerData_destroy(playerdata);
   CloseWindow();
 }

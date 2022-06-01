@@ -10,6 +10,8 @@ project_sources = [
   'src/main.c',
   'src/draw.c',
   'src/game.c',
+  'src/map.c',
+  'src/world.c'
   ]
 
 build_args = [

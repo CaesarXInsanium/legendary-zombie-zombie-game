@@ -18,5 +18,5 @@ void PlayerData_destroy(PlayerData *data);
 void PlayerData_update_pos(PlayerData *data, Vector2 pos);
 
 // update game state by one frame
-void run_frame(ZombieData *zombies, int zombie_count, PlayerData *player);
+void run_frame(const ZombieData *zombies, int zombie_count, PlayerData *player);
 #endif

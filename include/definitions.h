@@ -9,5 +9,5 @@
 
 #define PLAYER_SPEED 8.0
 
-#define MAX_ZOMBIES
+#define MAX_ZOMBIES 100
 #endif

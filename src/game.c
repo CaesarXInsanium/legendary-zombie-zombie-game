@@ -26,7 +26,7 @@ void update_player_pos(Vector2 *pos) {
     pos->y += PLAYER_SPEED;
 }
 
-void run_frame(ZombieData *zombies, int zombie_count, PlayerData *player) {
+void run_frame(const ZombieData *zombies, int zombie_count, PlayerData *player) {
   if (zombies != NULL) {
     printf("Zombie Count: %d", zombie_count);
   }

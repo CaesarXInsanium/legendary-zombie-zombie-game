@@ -3,6 +3,7 @@
 #include "definitions.h"
 
 typedef enum ZombieType { ZT_Basic, ZT_Fast, ZT_Boss } ZombieType;
+
 typedef struct Zombie {
   ZombieType type;
   int health;
@@ -11,7 +12,9 @@ typedef struct Zombie {
 
 typedef struct ZombieData{
   int count;
-  Zombie zombies[MAX_ZOMBIES];
+  int capacity;
+  Zombie *zombies;
 } ZombieData;
 
+void ZombieData_init(ZombieData *self);
 #endif

@@ -11,7 +11,8 @@ project_sources = [
   'src/draw.c',
   'src/game.c',
   'src/map.c',
-  'src/world.c'
+  'src/world.c',
+  'src/zombie.c',
   ]
 
 build_args = [
